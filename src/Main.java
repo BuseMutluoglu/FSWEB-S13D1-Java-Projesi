@@ -88,16 +88,16 @@ public class Main {
 
     }
     public static boolean hasTeen(int age1, int age2, int age3) {
-        if (13<=age1 && age1<=19 || 13<=age2 && age2<=19 || 13<=age3 && age3<=19) {
+        if (13 <= age1 && age1 <= 19 || 13 <= age2 && age2 <= 19 || 13 <= age3 && age3 <= 19) {
             return true;
         }
         return false;
     }
 
-    public static boolean isCatPlaying(boolean mevsimYazMi, int sicaklik){
-        if (mevsimYazMi==true && sicaklik<=45 && sicaklik>=25) {
+    public static boolean isCatPlaying(boolean season, int temp){
+        if (season && temp<=45 && temp>=25) {
             return true;
-        } else if (mevsimYazMi==false && sicaklik<=35 && sicaklik>=25){
+        } else if (!season && temp<=35 && temp>=25){
             return true;
         }
         return false;
